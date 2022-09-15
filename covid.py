@@ -7,6 +7,7 @@ app = Flask(__name__)
 def covid_info():
     if request.method=='GET':
         return render_template("covid.html")
+
     if request.method == 'POST':
         country = request.form["country"]
         print(country)
